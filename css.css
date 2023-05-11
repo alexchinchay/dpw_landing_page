@@ -1,0 +1,265 @@
+/* Primera fuente */
+
+@font-face {
+    font-family: 'Asap-SemiBold';
+    src: url(fuentes/Asap-SemiBold.ttf);
+}
+
+
+/* Segunda fuente */
+
+@font-face {
+    font-family: 'BIG JOHN';
+    src: url(fuentes/BIG\ JOHN.otf);
+}
+
+
+/* Tercera fuente */
+
+@font-face {
+    font-family: 'conthrax-sb';
+    src: url(fuentes/conthrax-sb.ttf);
+}
+
+/*Variables*/
+
+:root {
+    --main-color: #002060;
+    --second-color: #fff;
+    --third-color: #2E75B6;
+}
+
+.container-fluid .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--main-color);
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* .container .header div {
+    width: 100%;
+    height: 100%;
+} */
+
+.container-fluid .header .logo {
+    width: 15rem;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insigniaContainer {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    border: none;
+}
+
+.insignia {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+}
+
+.fondo {
+    height: 10rem;
+    color: #fff;
+    padding: 3rem;
+}
+
+.fondo p {
+    font-family: 'conthrax-sb', sans-serif;
+}
+
+h3,
+.descripcion {
+    font-family: 'Asap-SemiBold', sans-serif;
+}
+
+.subtitulo {
+    color: var(--main-color);
+}
+
+.lista {
+    color: var(--second-color);
+    background-color: var(--main-color);
+    width: 100%;
+    height: 15rem;
+}
+
+.span1 {
+    color: var(--second-color);
+    font-family: 'Asap-SemiBold', sans-serif;
+    font-size: 18px;
+}
+
+.span2 {
+    color: var(--second-color);
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+}
+
+.bannerCulminar {
+    background-color: var(--third-color);
+}
+
+.tituloCarrera {
+    color: var(--second-color);
+    width: 20rem;
+    border-radius: 10px;
+    font-family: 'Asap-SemiBold', sans-serif;
+    background-color: var(--main-color);
+}
+
+.itinerario {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    height: 25rem;
+}
+
+.imgEgresados {
+    width: 325px;
+    height: 203px;
+    margin: auto;
+}
+
+.imgEgresados>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.imgEgresados>button {
+    width: 100%;
+    border-radius: 7px;
+    background-color: var(--third-color);
+    border: none;
+}
+
+.imgEgresados>button a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.testimoniosBox {
+    width: 100%;
+}
+
+.testimonios {
+    width: 80%;
+    margin: auto;
+}
+
+.testimonioPhoto {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.testimonioPhoto>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.testimonioAutor {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/* .profileIcon {
+    width: 100px;
+    height: 100px;
+} */
+
+.profileIcon>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+@media (max-width: 1024px) {
+    .container-fluid .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        width: 100%;
+        margin: auto;
+        padding: 3rem 0;
+        height: 100%;
+    }
+    .imgEgresados {
+        width: 325px;
+        height: 203px;
+        margin: auto;
+    }
+    .imgEgresados>img {
+        width: 70%;
+        height: 70%;
+        border-radius: 15px;
+    }
+    .imgEgresados>button {
+        width: 70%;
+    }
+    .container-fluid .header .logo {
+        width: 10rem;
+    }
+    .fondo {
+        width: 100%;
+    }
+    .fondo p {
+        font-size: 25px;
+    }
+}
+
+@media (min-with: 720px) and (max-width: 1023px) {
+    .container-fluid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        width: 100%;
+        margin: auto;
+        padding: 3rem 0;
+        height: 100%;
+    }
+    .row {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 719px) {
+    .container-fluid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        width: 100%;
+        margin: auto;
+        padding: 3rem 0;
+        height: 100%;
+    }
+    .row {
+        width: 100%;
+        margin: auto;
+    }
+}
